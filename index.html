@@ -24,8 +24,12 @@
             border: 2px dashed black;
             padding: 30px;
         }
-        .printBtn{
-            padding-right: 20px;
+        input{
+            width: 70px; 
+            height: 30px; 
+            margin-top: 30px; 
+            border: none;
+            background-color: orangered;
         }
 
     </style>
@@ -44,7 +48,7 @@
             <h3>Country: Nigeria</h3>
             <form class="printBtn">
                 <!-- When a user click on the print button, the onclick function calls the window.print() method to print the currently visible content in the window screen. -->
-                <input type="button" value="Print" onclick="printFun()" style=" width: 70px; height: 30px; margin-top: 30px; border: none;background-color: orangered;" />
+                <input type="button" value="Print" onclick="printFun()"  />
             </form>
         </div>
     </div>

@@ -6,25 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print Method</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .wrapper{
+            line-height: 3rem;
+            border: 2px dashed black;
+            padding: 30px;
+        }
+        .printBtn{
+            padding-right: 20px;
+        }
+
+    </style>
     <script type="text/javascript">
-        function printFun()  
-        {  
-        window.print();  
-        } 
+        function printFun() {
+            window.print();
+        }
     </script>
 </head>
 
 <body>
-    <h2> Name: Mildred Erubore </h2>
-    <h3>Height: 5'4</h3>
-    <h3>Country: Nigeria</h3>
-    <br />
-    <form>
-        <!-- When a user click on the print button, the onclick function calls the window.print() method to print the currently visible content in the window screen. -->
-        <input type="button" value="Print" onclick="printFun()" />
-    </form>
-
-
+    <div class="container">
+        <div class="wrapper">
+            <h2> Name: Mildred Erubore </h2>
+            <h3>Height: 5'4</h3>
+            <h3>Country: Nigeria</h3>
+            <form class="printBtn">
+                <!-- When a user click on the print button, the onclick function calls the window.print() method to print the currently visible content in the window screen. -->
+                <input type="button" value="Print" onclick="printFun()" style=" width: 70px; height: 30px; margin-top: 30px; border: none;background-color: orangered;" />
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
